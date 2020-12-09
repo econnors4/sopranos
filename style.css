@@ -1,0 +1,242 @@
+@keyframes color-fade {
+  from {background-color:#ffff;}
+  to {background-color: #ffc0cb;}
+  }
+
+header {
+    font-family: 'Montserrat';
+    animation-name: color-fade;
+    animation-duration: 4s;
+    background-color:#ffc0cb;
+    background-size: cover;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    border: 5px solid #8b008b;
+}
+div.skip{
+  font-family: "Lexend Zetta";
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+div.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Lexend Zetta';
+}
+
+h2{
+  text-align: center;
+  font-family: 'Lexend Zetta';
+}
+body {
+    background-color:#ffc0cb;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    font-family: 'Montserrat';
+}
+
+
+nav a:hover, nav a:focus, .current {
+    text-decoration: underline;
+    color: #8b008b;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    background-color:#ffc0cb;
+    font-family: 'Lexend Zetta'
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .graphic img{
+    height: 150px;
+    width: 100%;
+  }
+
+  .members {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+ 
+  .music {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .members img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .music video{
+
+   max-height: 100px;
+   max-width: 200px;
+ }
+
+  div {
+    grid-column: 1 / span 3;
+    width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+  }
+
+ .performance {
+  background-image: url("performance.jpg");
+
+ 
+  height: 500px;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+
+.flexcontain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexcontain img{
+  height: 200px;
+    width: 300px;
+  }
+
+
+
+  .flip-card-front {
+    max-width: 100px;
+    border: 1px solid #f1f1f1;
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-front img{
+    height: 200px;
+    width: 300px;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+
+.flip-card-back {
+  background-color: #8b008b;
+  width: 300px;
+  height: 200px;
+  color: #f1f1f1;
+  transform: rotateY(180deg);
+}
+
+
+  .members img{
+    border: 5px solid #8b008b
+  }
+  form{
+    text-align: center
+  }
+
+  footer {
+    font-family: 'Lexend Zetta'
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    header, body, ul {
+      animation: none
+    }
+  
+   }
+
+   @media only screen and (min-width: 768px) {
+    .members img {
+      max-height: 600px;
+      max-width: 500px;
+    }
+    .music video{
+  
+     max-height: 500px;
+     max-width: 800px;
+   }
+   .graphic img{
+    height: 500px;
+    width: 800px
+  }
+   }
+  
+  @media only screen and (min-width: 1000px) {
+    .members img {
+      max-height: 800px;
+      max-width: 700px;
+    }
+    .music video{
+  
+     max-height: 700px;
+     max-width: 100%;
+   }
+   .graphic img{
+    height: 700px;
+    width: 100%;
+  }
+  
+   }
+  
